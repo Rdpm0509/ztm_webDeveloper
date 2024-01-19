@@ -2,6 +2,8 @@
 This is how a CSS (cascating style sheets) works.
 cascating means ... the last input value is taken into account. 
 
+Very good resource: css-tricks.com 
+
 
 Selector{
 	Property: value;
@@ -9,10 +11,31 @@ Selector{
 
 */
 
+body {
+	background-image: url(background.jpg) ;
+	background-size: cover;
+	background-repeat: space;
+	background-position: center;
+}
+
 h2 {
-	color:red;
+	color:#802B66;
+	text-align: left;	
+	/* 
+		rgba = rgb alpha, so it controls the transparency
+		rgba(x,y,z,alpha)
+		*/
+	border: 2px dotted rgb(49, 58, 117);
+	cursor: pointer;
 }
 
 p {
-	color: pink;
+	color: #AA7539;
 }
+
+li {
+	color: white;
+	list-style: none;
+	display: inline-block;
+}
+
