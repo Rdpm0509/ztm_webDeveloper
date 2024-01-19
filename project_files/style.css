@@ -2,7 +2,9 @@
 This is how a CSS (cascating style sheets) works.
 cascating means ... the last input value is taken into account. 
 
-Very good resource: css-tricks.com 
+Very good resource: 
+*https://w3schools.com/cssref/css_selectors.asp
+*https://css-tricks.com/almanac
 
 
 Selector{
@@ -14,18 +16,16 @@ Selector{
 body {
 	background-image: url(background.jpg) ;
 	background-size: cover;
-	background-repeat: space;
-	background-position: center;
 }
 
-h2 {
+h2, p {
 	color:#802B66;
-	text-align: left;	
+	text-align: center;	
 	/* 
 		rgba = rgb alpha, so it controls the transparency
 		rgba(x,y,z,alpha)
 		*/
-	border: 2px dotted rgb(49, 58, 117);
+	border: 5px dotted rgb(49, 58, 117);
 	cursor: pointer;
 }
 
@@ -39,3 +39,6 @@ li {
 	display: inline-block;
 }
 
+.webtext{
+	border: 5px dashed green;
+}
