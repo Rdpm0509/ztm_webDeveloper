@@ -1,0 +1,18 @@
+/*
+This is how a CSS (cascating style sheets) works.
+cascating means ... the last input value is taken into account. 
+
+
+Selector{
+	Property: value;
+}
+
+*/
+
+h2 {
+	color:red;
+}
+
+p {
+	color: pink;
+}
