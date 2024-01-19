@@ -11,7 +11,31 @@ Selector{
 	Property: value;
 }
 
+*class
+select a group of elements and ensure they'll have the 
+same kind of effect
+
+.id
+similar to class, but can only use id once. 
+
+*
+not used very often, but it means 'all elements'
+be careful with specificity.
+
+element, element
+(done below for h2, p)
+
+element element (ex. h2 p)
+it means acts in 'p' that are inside 'h2'
+
+
+
 */
+
+
+* {
+	text-align: right;
+}
 
 body {
 	background-image: url(background.jpg) ;
@@ -39,6 +63,18 @@ li {
 	display: inline-block;
 }
 
-.webtext{
+.webtext {
 	border: 5px dashed green;
+}
+
+.active {
+	color: red;
+}
+
+#div1 {
+	background: rgba(0, 0, 255, 0.2);
+}
+
+#div2 {
+	background: rgba(255, 0, 0, 0.2);
 }
