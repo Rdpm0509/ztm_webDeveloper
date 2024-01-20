@@ -1,3 +1,18 @@
 h2 {
 	color: blue;
+	text-decoration: underline;
+}
+
+p {
+	color: darkred;
+	text-transform: uppercase;
+	line-height: 22px;
+	font-style: italic;
+	/*	You can set 100 and 900 or just say bold */
+	font-weight: bold;
+	/*	100 does nothing. Try 150% */
+	font-size: 100%;
+	/*	font-family: "Times New Roman", Arial;*/
+	/* Getting font-family from google	*/
+	font-family: 'Grape Nuts', cursive;
 }
