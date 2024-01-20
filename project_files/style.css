@@ -26,8 +26,44 @@ element, element
 (done below for h2, p)
 
 element element (ex. h2 p)
-it means acts in 'p' that are inside 'h2'
+it means acts in 'p' that are inside 'h2'.
+The example below works, once p is inside h2 block
+<h2>home
+	<div>
+		<p>homegnome</p>
+	</div>
+</h2>
 
+element > element (e.g. h2 > p)
+It only wants to select all p that have parent of h2.
+For example, in the case below, h2 > p wont work because
+<div> is its parent not h2. 
+
+<h2>home
+	<div>
+		<p>homegnome</p>
+	</div>
+</h2>
+
+
+element + element 
+select the element right after the element
+(e.g., h2 + p means take the p that's just right after h2
+
+<h2>home</h2><p>homegnome</p>
+
+:hover
+When I hover my mouse, it changes the style. 
+
+:last-child (it gets the last effect of a block and it works nicely with classes)
+:first-child (the same as last-child)
+
+!important (not recommended because it ovewrites commands in the casacade)
+
+What seletors win ou in the cascade epends on: 
+-Specificity (there's a website called specificity.keegan.st)
+-Importance
+-Source Order
 
 
 */
@@ -42,7 +78,7 @@ body {
 	background-size: cover;
 }
 
-h2, p {
+h2, p:hover{
 	color:#802B66;
 	text-align: center;	
 	/* 
@@ -63,7 +99,7 @@ li {
 	display: inline-block;
 }
 
-.webtext {
+.webtext :last-child{
 	border: 5px dashed green;
 }
 
