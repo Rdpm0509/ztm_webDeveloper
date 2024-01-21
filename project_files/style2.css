@@ -62,3 +62,25 @@ footer {
 	width: 33px;
 	height: 55px;
 }
+
+span {
+	/* 
+	REMEMBER: 
+	This span is inside the <p> tag
+	So it makes co-dependent somehow (reflected when using 'em'. 
+	There's a way of making it more or less independent (reflected when using 'rem'). 
+	*/
+	color: black;
+
+	/* This command below is related to what i dfined <p> {some_px}	*/
+	font-size: 1.2em;
+	
+	/* 
+	The size related to the root element (rem)
+	Whatever the document is, it defines for instance 
+	2rem (2 times of the size od the text of the document)
+	The root document is the html
+	*/
+/*	font-size: 2em;*/
+
+}
