@@ -4,15 +4,49 @@ h2 {
 }
 
 p {
-	color: darkred;
+	color: #AA4139;
 	text-transform: uppercase;
-	line-height: 22px;
 	font-style: italic;
+
+	/* Set a distance between each line of the text	*/
+	line-height: 30px;
+	
 	/*	You can set 100 and 900 or just say bold */
 	font-weight: bold;
+	
 	/*	100 does nothing. Try 150% */
-	font-size: 100%;
+	font-size: 130%;
+	
 	/*	font-family: "Times New Roman", Arial;*/
 	/* Getting font-family from google	*/
 	font-family: 'Grape Nuts', cursive;
+	
+	text-align: center;
+	border: 5px solid rgba(255, 176, 170, 0.5);
+}
+
+li {
+	list-style: none;
+	display: inline-block;
+
+}
+
+img {
+	
+	/* Notice that the way the img is identend (into html file)	
+	the picture may end up inside the delimites box we've created with
+	the command border
+	*/
+	
+	/* Position propreties, but it is not a best practice	*/
+	float: upper;
+}
+
+footer {
+	/*Because of float in the im{} above, the footer text will be moved accordingly
+	To fix it, we need first 'clean' the effect and then align the text. 
+	This is because the property 'float' has funny effects on the picture
+	 */
+	clear: both;
+	text-align: center;
 }
