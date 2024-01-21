@@ -50,3 +50,15 @@ footer {
 	clear: both;
 	text-align: center;
 }
+
+.boxmodel{
+	border: 5px solid red;
+	display: inline-block;
+	/*top right bottom left*/
+	padding: 5px 20px 5px 20px;
+	/* add spaces between the boxes. Top, right, bottom, left are considered	*/
+	/* if only two options are considered, than it understands (top, bottom)=px1, (right, left)=px2  */
+	margin: 0px 20px 0px 20px;
+	width: 33px;
+	height: 55px;
+}
