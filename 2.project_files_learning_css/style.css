@@ -1,0 +1,116 @@
+/*
+This is how a CSS (cascating style sheets) works.
+cascating means ... the last input value is taken into account. 
+
+Very good resource: 
+*https://w3schools.com/cssref/css_selectors.asp
+*https://css-tricks.com/almanac
+
+
+Selector{
+	Property: value;
+}
+
+*class
+select a group of elements and ensure they'll have the 
+same kind of effect
+
+.id
+similar to class, but can only use id once. 
+
+*
+not used very often, but it means 'all elements'
+be careful with specificity.
+
+element, element
+(done below for h2, p)
+
+element element (ex. h2 p)
+it means acts in 'p' that are inside 'h2'.
+The example below works, once p is inside h2 block
+<h2>home
+	<div>
+		<p>homegnome</p>
+	</div>
+</h2>
+
+element > element (e.g. h2 > p)
+It only wants to select all p that have parent of h2.
+For example, in the case below, h2 > p wont work because
+<div> is its parent not h2. 
+
+<h2>home
+	<div>
+		<p>homegnome</p>
+	</div>
+</h2>
+
+
+element + element 
+select the element right after the element
+(e.g., h2 + p means take the p that's just right after h2
+
+<h2>home</h2><p>homegnome</p>
+
+:hover
+When I hover my mouse, it changes the style. 
+
+:last-child (it gets the last effect of a block and it works nicely with classes)
+:first-child (the same as last-child)
+
+!important (not recommended because it ovewrites commands in the casacade)
+
+What seletors win ou in the cascade epends on: 
+-Specificity (there's a website called specificity.keegan.st)
+-Importance
+-Source Order
+
+
+*/
+
+
+* {
+	text-align: right;
+}
+
+body {
+	background-image: url(background.jpg) ;
+	background-size: cover;
+}
+
+h2, p{
+	color:#802B66;
+	text-align: center;	
+	/* 
+		rgba = rgb alpha, so it controls the transparency
+		rgba(x,y,z,alpha)
+		*/
+	border: 5px dotted rgb(49, 58, 117);
+	cursor: pointer;
+}
+
+p {
+	color: #AA7539;
+}
+
+li {
+	color: white;
+	list-style: none;
+	display: inline-block;
+}
+
+.webtext :last-child{
+	border: 5px dashed green;
+}
+
+.active {
+	color: red;
+}
+
+#div1 {
+	background: rgba(0, 0, 255, 0.2);
+}
+
+#div2 {
+	background: rgba(255, 0, 0, 0.2);
+}
