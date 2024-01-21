@@ -1,7 +1,15 @@
+body{
+	/*
+	Because some browsers have their own margin value, sometimes an icon wont go to the edge
+	So to control it, let's remove the margin by tweaking the body of the html file
+	*/
+	margin: 0px
+
+}
+
 .container {
 	/* This is how we activate flex	*/
 	display: flex;
-
 	flex-wrap: wrap;
 	justify-content: center;
 }
@@ -13,10 +21,31 @@ h1 {
 	border-bottom: 2px solid pink;
 	width: 400px;
 	text-align: center;
+	/* 
+	This is an example of how to include shadow to the box of the website
+	This command wasnt properly adopted to all browsers at first. So 
+	to be sure it would work to every browswer, such a command should be followed
+	by a prefix due to the respective browswer. For example 
+	MOZILLA: -moz-box-shadow: 4px 4px 5px #888888;
+	EXPLORE: -ms-box-shadow: 4px 4px 5px #888888;
+	CHROME:  -webkit-box-shadow: 4px 4px 5px #888888;
+	OPERA:   -o-box-shadow: 4px 4px 5px #888888; 
+	*/
+	box-shadow: 4px 4px 5px #888888;
+	margin-top: 10px;
 }
 
 img {
 	width: 400px;
 	height: 300px;
 	margin: 10px;
+	/* 
+	I want the image to transition when an action is taken upon it.
+	I want that action takes 1 second
+	*/
+	transition: all 1s;
+}
+
+img:hover{
+	transform: scale(1.1);
 }
